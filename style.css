@@ -2,78 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
 }
 
 body {
-    background-color: #FEFAE0;
     height: 100%;
+    background-color: #FEFAE0;
 }
 
 header {
-    position: sticky; 
-    left: 0;
-    right: 0;
+    position: sticky;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 40px; 
-    background-color: #CCD5AE; 
     margin: 0;
     height: 50px;
+    background-color: #CCD5AE; 
 }
 
-.topBarLeft {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 30px;
-}
-
-.topBarRight {
-    display: flex;
-    gap: 20px;
-    font-size: 24px;
-}
-
-a {
-    font-family: Sans-serif;
+a, h1, h2, p, span {
     color: #190C00;
     text-decoration: none;
+}
+
+.header-left a {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.header-right a {
+    padding: 0px 3px;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #E9EDC9;
     padding: 20px;
     height: calc((100vh - 50px)*.45);
+    background-color: #E9EDC9;
 }
 
 .hero-text {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 60%;
 }
 
 .hero-text h1 {
-    font-size: 4em;
-    text-align: end
+    margin-bottom: 10px;
+    text-align: end;
+    font-family: 'Space Mono';
+    font-size: 3.5em;
+    line-height: 70px;
 }
 
 .hero-text p {
-    font-size: 1.2em;
     text-align: end;
+    font-size: 1.2em;
 }
 
 .bottom {
     display: flex;
-    height: calc((100vh - 50px)*.55);
     flex-direction: column;
     justify-content: space-evenly;
+    height: calc((100vh - 50px)*.55);
 }
 
 h2 {
     text-align: center;
+    font-family: 'Space Mono';
     font-size: 2em;
+    font-weight: 400;
 }
 
 .cards {
@@ -86,17 +91,19 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FAEDCD;
     width: 20vw;
     height: 250px;
+    padding: 10px;
     border: solid 6px #D4A373;
     border-radius: 20px;
-    padding: 10px;
+    background-color: #FAEDCD;
 }
 
 .card span {
-    font-size: 1.5em;
     text-align: center;
+    font-family: 'Space Mono';
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .card .icon {
