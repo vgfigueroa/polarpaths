@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Polar Paths - Suggest a Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe2476605d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="right-side">
+        <a href="">Polar Paths</a>
+      </div>
+      <div class="right-side">
+        <a href="./explore/explore.html">Explore</a>
+        <span>|</span>
+        <a href="./carpool/carpool.html">Carpool</a>
+        <span>|</span>
+        <a href="./info/info.html">Info</a>
+        <span>|</span>
+        <a href="./suggest/suggest.html">Suggest</a>
+        <span>|</span>
+        <a href="./account/account.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </header>
+    <div class="form-container">
+      <h1>Suggest a Destination!</h1>
+      <h2>Fill out the information below and download your suggestion file to email to us.</h2>
+      
+      <form>
+        <p>First Name:</p>
+        <input type="text" id="firstName" placeholder="Enter your first name">
+        
+        <p>Last Name:</p>
+        <input type="text" id="lastName" placeholder="Enter your last name">
+        
+        <p>Destination:</p>
+        <input type="text" id="destination" placeholder="Enter destination">
+      
+        <p>Location (Google Maps link or coordinates):</p>
+        <input type="text" id="location" placeholder="Enter location">
+      
+        <p>How can this location be reached without a personal car?</p>
+        <input type="text" id="routes" placeholder="Enter routes">
+      
+        <p>Brief Description:</p>
+        <textarea id="description" placeholder="Enter description"></textarea>
+      
+        <div class="button-group">
+          <button id="AddPhotos" type="button">Add Photos</button>
+          <button id="Submit" type="button">Submit!</button>
+        </div>
+      </form>
+      
+      <div id="emailInstructions" style="margin-top: 20px; font-size: 16px; color: #190C00;"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
