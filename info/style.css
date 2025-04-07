@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEFAE0;
+    padding-top: 39px;
+}
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 40px; 
+    background-color: #CCD5AE; 
+    margin: 0;
+}
+
+.topBarLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 30px;
+}
+
+.topBarRight {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+a {
+    font-family: Sans-serif;
+    color: #190C00;
+    text-decoration: none;
+}
+
+.pageTitle {
+    background-color: #dee8be; 
+    height: 100px;
+    /* flexbox to make sure that the txt is centered */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.pageTitle h1 {
+    color: #190C00; 
+    text-align: center;
+    font-size: 60px;
+}
+
+.boxForTransitOption {
+    background-color: #e2dbac;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* I needed to add this to ensure that the title went above the image / txt*/
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.individualTransitOptionTitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.individualTransitOptionDescription {
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    row-gap: 50px; /* this is gap btwn boxes */
+    column-gap: 100px; 
+    padding: 40px; /* this is gap between header and grid */
+    
+}
+
+.gridImage {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 0px 0px 10px 10px;
+    width: 50%
+}
+
+#gridImageAmtrak {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 0px 0px 10px 10px;
+    width: 50%
+}
+
+#gridImageBREEZ {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 0px 0px 10px 10px;
+    width: 45%
+}
+
+#gridImageLink {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 0px 0px 10px 10px;
+    width: 50%
+}
+
+#gridImageConcordCoach {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 0px 0px 10px 10px;
+    width: 50%
+}
+
+.boxForTransitOption {
+    /* this makes sure that the text / image in each transit box is alligned */
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.contentWithinBox {
+    display: flex;
+    align-items: top; /* this makes the image / text higher up vertically  */
+    gap: 20px;
+}
+
+#rightSideContentWithinBoxConcordCoach {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+#rightSideContentWithinBoxBrunswickLink {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#rightSideContentWithinBoxBreez {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#rightSideContentWithinBoxAmtrak {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+}
+
+
+.infoLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Polar Paths</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe2476605d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="">Polar Paths</a>
+      </div>
+
+      <div class="right-side">
+        <a href="./explore/explore.html">Explore</a>
+        <span>|</span>
+        <a href="./carpool/carpool.html">Carpool</a>
+        <span>|</span>
+        <a href="./info/info.html">Info</a>
+        <span>|</span>
+        <a href="./suggest/suggest.html">Suggest</a>
+        <span>|</span>
+        <a href="./account/account.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </header>
+
+    <!-- add the title of the page -->
+    <div class="pageTitle"><h1>Brunswick Public Transit Info</h1></div> 
+
+    <!-- use a flexbox grid to display the transit options -->
+    <div class="containerGrid">
+
+      <!-- 1. Amtrak -->
+      <div class="boxForTransitOption">
+        <h2 class="individualTransitOptionTitle">Amtrak Downeaster</h2>
+        <div class="contentWithinBox">
+          <img id="gridImageAmtrak" src="assets/amtrak_downeaster.jpg" alt="Amtrak Train">
+          <div id = "rightSideContentWithinBoxAmtrak"> 
+            <p class="individualTransitOptionDescription">The Amtrak Downeaster runs along the coast from Brunswick to Boston.</p>
+            <div class="infoLinks">
+              <a href="https://amtrakdowneaster.com/">More Info</a>
+              <a href="https://amtrakdowneaster.com/schedule/">Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2. BREEZ Bus -->
+      <div class="boxForTransitOption">
+        <h2 class="individualTransitOptionTitle">BREEZ Bus</h2>
+        <div class="contentWithinBox">
+          <img id="gridImageBREEZ" src="assets/breez_bus.jpg" alt="Breez Bus">
+          <div id = "rightSideContentWithinBoxBreez"> 
+            <p class="individualTransitOptionDescription">BREEZ connects Brunswick with Freeport, Yarmouth, and Portland.</p>
+            <div class="infoLinks">
+              <a href="https://www.gpmetro.org/">More Info</a>
+              <a href="https://www.gpmetro.org/wp-content/uploads/2024/12/BREEZ-bro-6-24_202407100711368519-1.pdf">Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- 3. Brunswick Link -->
+      <div class="boxForTransitOption">
+        <h2 class="individualTransitOptionTitle">Brunswick Link</h2>
+        <div class="contentWithinBox">
+          <img id="gridImageLink" src="assets/brunswick_link.jpg" alt="Brunswick Link">
+          <div id = "rightSideContentWithinBoxBrunswickLink"> 
+            <p class="individualTransitOptionDescription">The Brunswick Link has several stops in Brunswick, and is currently free!</p>
+            <div class="infoLinks">
+              <a href="https://brunswicklink.org/">More Info</a>
+              <a href="https://brunswicklink.org/map-schedule/">Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Concord Coach -->
+      <div class="boxForTransitOption">
+        <h2 class="individualTransitOptionTitle">Concord Coach</h2>
+        <div class="contentWithinBox">
+          <img id="gridImageLink" src="assets/concord_coach.jpg" alt="Concord Coach">
+          <div id = "rightSideContentWithinBoxConcordCoach"> 
+            <p class="individualTransitOptionDescription">The Concord Coach connects Portland and Boston.</p>
+            <div class="infoLinks">
+              <a href="https://concordcoachlines.com/">More Info</a>
+              <a href="https://concordcoachlines.com/route/portland-me-to-from-boston-logan-airport/">Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="main"></div>
+  </body>
+</html>
