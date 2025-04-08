@@ -5,14 +5,16 @@
     <title>Polar Paths</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fe2476605d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="right-side">
+      <div class="header-left">
         <a href="">Polar Paths</a>
       </div>
-
-      <div class="right-side">
+      <div class="header-right">
         <a href="./explore/explore.html">Explore</a>
         <span>|</span>
         <a href="./carpool/carpool.html">Carpool</a>
@@ -21,9 +23,50 @@
         <span>|</span>
         <a href="./suggest/suggest.html">Suggest</a>
         <span>|</span>
-        <a href="./account/account.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./account/account.html"><i class="fa-solid fa-user-circle"></i></a>
       </div>
     </header>
-    <div class="main"></div>
+    <div class="main">
+      <div class="hero">
+        <img src="images/polar-paths-logo.png" alt="A polar bear holding a map, with the label 'Polar Paths'" width="30%">
+        <div class="hero-text">
+          <h1>Welcome to Polar Paths!</h1>
+          <p>Our mission is to encourage members of the Bowdoin community to use public transportation whenever possible.
+            This site is a hub where users can find information on Brunswick's public transport options, browse popular
+            destinations, and coordinate carpools to events. Want to contribute to our project? Head to "Suggest" in
+            the navigation bar or down below to recommend your own destinations.
+          </p>
+        </div>
+      </div>
+      <div class="bottom">
+        <h2>What can we help you with today?</h2>
+        <div class="cards">
+          <a href="./explore/explore.html">
+            <div class="card">
+              <span>Explore desintations</span>
+              <i class="fa-solid fa-magnifying-glass fa-5x icon"></i>
+            </div>
+          </a>
+          <a href="./carpool/carpool.html">
+            <div class="card">
+              <span>Coordinate a carpool</span>
+              <i class="fa-solid fa-car-side fa-5x icon"></i>
+            </div>
+          </a>
+          <a href="./info/info.html">
+            <div class="card">
+              <span>View public transport info</span>
+              <i class="fa-solid fa-circle-info fa-5x icon"></i>
+            </div>
+          </a>
+          <a href="./suggest/suggest.html">
+            <div class="card">
+              <span>Suggest a destination</span>
+              <i class="fa-solid fa-hand-holding-heart fa-5x icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
