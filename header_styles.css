@@ -1,0 +1,28 @@
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 40px; 
+    margin: 0;
+    height: 50px;
+    background-color: #CCD5AE; 
+}
+
+header a {
+    color: #190C00;
+    text-decoration: none;
+}
+
+.header-left a {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.header-right a {
+    padding: 0px 3px;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans';
+}

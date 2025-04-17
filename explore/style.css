@@ -9,20 +9,6 @@ body {
     padding: 0;
 }
 
-header {
-    position: fixed; 
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 40px; 
-    background-color: #CCD5AE; 
-    margin: 0;
-    height: 60px;
-    z-index: 1000;
-}
-
 main {
     margin-top: 0px;
     display: flex;
@@ -31,19 +17,6 @@ main {
     justify-content: center;
     padding-top: 150px; /* to push the search bar down vertically */
     align-items: center;
-}
-
-.topBarLeft {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 30px;
-}
-
-.topBarRight {
-    display: flex;
-    gap: 20px;
-    font-size: 24px;
 }
 
 .search-container {
