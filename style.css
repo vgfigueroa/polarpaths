@@ -74,6 +74,7 @@ h2 {
     border: solid 6px #D4A373;
     border-radius: 20px;
     background-color: #FAEDCD;
+    transition: border-width 0.3s ease-in-out;
 }
 
 .card span {
@@ -85,5 +86,13 @@ h2 {
 
 .card .icon {
     color: #D4A373;
-    size: 5em;
+    /* size: 5em; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    border-width: 8px;
+    .icon {
+        transform: scale(1.2);
+    }
 }
