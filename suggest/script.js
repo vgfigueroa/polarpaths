@@ -6,11 +6,10 @@
 //     const lastName = document.getElementById("lastName").value.trim();
 //     const destination = document.getElementById("destination").value;
 //     const location = document.getElementById("location").value;
-//     const routes = document.getElementById("routes").value;
 //     const description = document.getElementById("description").value;
   
 //     // Combine content into a string
-//     const content = `Destination: ${destination}\nLocation: ${location}\nRoutes: ${routes}\nDescription: ${description}\n`;
+//     const content = `Destination: ${destination}\nLocation: ${location}\nDescription: ${description}\n`;
   
 //     // Format current date/time as MMDDYY_HHMM
 //     const now = new Date();
