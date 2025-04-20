@@ -22,41 +22,43 @@
         <span>|</span>
         <a href="../info/info.html">Info</a>
         <span>|</span>
-        <a href="">Suggest</a>
+        <a href="" id="current-page">Suggest</a>
         <span>|</span>
         <a href="../account/account.html"><i class="fa-solid fa-user-circle"></i></a>
       </div>
     </header>
-    <div class="form-container">
+    <div class="hero">
       <h1>Suggest a Destination!</h1>
-      <h2>Fill out the information below and download your suggestion file to email to us.</h2>
-      
-      <form>
-        <p>First Name:</p>
-        <input type="text" id="firstName" placeholder="Enter your first name">
+      <h2>Please fill out the information below to submit your own destinations/routes to Polar Paths.</h2>
+    </div>
+    <div id="form-container">
+      <form id="form">
+        <label for="firstName">Name (optional)</label>
+        <input type="text" class="text-input" id="firstName" placeholder="Enter your name">
+
+        <label for="destination">Destination title<span class="required">*</span></label>
+        <input type="text" class="text-input" id="destination" placeholder="Enter title" required>
         
-        <p>Last Name:</p>
-        <input type="text" id="lastName" placeholder="Enter your last name">
-        
-        <p>Destination:</p>
-        <input type="text" id="destination" placeholder="Enter destination">
+        <label for="destination">Describe this destination<span class="required">*</span></label>
+        <textarea class="text-input" id="destination" placeholder="Describe destination" required></textarea>
       
-        <p>Location (Google Maps link or coordinates):</p>
-        <input type="text" id="location" placeholder="Enter location">
+        <label for="location">Location (Google Maps link or coordinates)<span class="required">*</span></label>
+        <input class="text-input" type="text" id="location" placeholder="Enter location" required>
       
-        <p>How can this location be reached without a personal car?</p>
-        <input type="text" id="routes" placeholder="Enter routes">
+        <label for="transit">How can this location be reached without a personal car?<span class="required">*</span></label>
+        <input class="text-input" type="text" id="transit" placeholder="Enter transit options" required>
       
-        <p>Brief Description:</p>
-        <textarea id="description" placeholder="Enter description"></textarea>
-      
-        <div class="button-group">
-          <button id="AddPhotos" type="button">Add Photos</button>
-          <button id="Submit" type="button">Submit!</button>
+        <label for="image-upload">Upload an image (optional)</label> 
+        <input type="file" id="image-upload" accept="image/*">
+
+        <div id="submit-div">
+          <input id="submit" type="submit">
         </div>
       </form>
-      
-      <div id="emailInstructions" style="margin-top: 20px; font-size: 16px; color: #190C00;"></div>
+      <div id="confirmation-message" style="display: none;">
+        <h2>Thank you! Your form has been submitted.</h2>
+        <a id="new-form-button" href="">Submit another form</a>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

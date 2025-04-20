@@ -9,11 +9,6 @@ header {
     background-color: #CCD5AE; 
 }
 
-header a {
-    color: #190C00;
-    text-decoration: none;
-}
-
 .header-left a {
     font-family: 'Space Mono';
     font-weight: 700;
@@ -25,4 +20,19 @@ header a {
     font-weight: 500;
     font-size: 1.2em;
     font-family: 'IBM Plex Sans';
+}
+
+header a {
+    color: #190C00;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: rgba(233, 237, 201, 0.7);
+}
+
+#current-page {
+    text-decoration: underline;
 }
