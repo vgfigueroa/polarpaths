@@ -14,6 +14,23 @@ a, h1, h2, p, span {
     color: #190C00;
     text-decoration: none;
 }
+p.slogan{
+    font-size: 25px;
+    color: rgb(64, 63, 63);
+    /* font-style: italic; */
+    /* text-shadow: -1px -1px 0 #D4A373, 1px -1px 0 #D4A373, -1px 1px 0 #D4A373, 1px 1px 0 #D4A373; */
+}
+.card .hover-text {
+    display: none;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.card:hover .hover-text {
+    display: block;
+}
 
 .hero {
     display: flex;
@@ -54,7 +71,7 @@ a, h1, h2, p, span {
 h2 {
     text-align: center;
     font-family: 'Space Mono';
-    font-size: 2em;
+    font-size: 50px;
     font-weight: 400;
 }
 
@@ -68,6 +85,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    font-size: larger;
     width: 20vw;
     height: 250px;
     padding: 10px;
@@ -86,12 +104,12 @@ h2 {
 
 .card .icon {
     color: #D4A373;
-    /* size: 5em; */
     transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
     border-width: 8px;
+    font-family: 'IBM Plex Sans';
     .icon {
         transform: scale(1.2);
     }

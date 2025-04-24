@@ -8,13 +8,14 @@ header {
     height: 50px;
     background-color: #CCD5AE; 
 }
-
 .header-left a {
     font-family: 'Space Mono';
     font-weight: 700;
     font-size: 1.5em;
 }
-
+p.slogan{
+    font-size: 35px;
+}
 .header-right a {
     padding: 0px 3px;
     font-weight: 500;
