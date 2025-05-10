@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
@@ -34,12 +35,12 @@
       </div>
 
       <div class="content">
-        <div class="cards-container">
+        <!-- <div class="cards-container">
           <h1>Results</h1>
 
           <div class="cards-flex">
 
-            <div class="card"> <!-- card 1 -->
+            <div class="card">
               <h1> Swinging Bridge </h1>
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -48,7 +49,7 @@
               <i class="fa-solid fa-heart heart-icon"></i>
             </div>
 
-            <div class="card"> <!-- card 2 -->
+            <div class="card">
               <h1> Gelato Fiasco </h1>
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -57,7 +58,7 @@
               <i class="fa-solid fa-heart heart-icon"></i>
             </div>
 
-            <div class="card"> <!-- card 3 -->
+            <div class="card">
               <h1> Pineland Farms </h1>
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -66,7 +67,7 @@
               <i class="fa-solid fa-heart heart-icon"></i>
             </div>
 
-            <div class="card"> <!-- card 4 -->
+            <div class="card">
               <h1> Acadia National Park </h1>
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -76,9 +77,16 @@
             </div>
 
           </div>
+        </div> -->
+        <div class="cards-container">
+          <h1>Results</h1>
+          <div class="cards-flex" id="cardsFlex">
+          </div>
         </div>
 
         <img class="map" src="https://www.freeworldmaps.net/united-states/maine/maine-mountains-map.jpg" alt="Map of Maine">
+
+        <ul id="destinationsList"></ul>
 
       </div>
     </main>
