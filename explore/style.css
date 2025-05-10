@@ -15,7 +15,7 @@ main {
     align-items: flex-start; /* align to top */
     flex-direction: column;
     justify-content: center;
-    padding-top: 150px; /* to push the search bar down vertically */
+    padding-top: 10px; /* to push the search bar down vertically */
     align-items: center;
 }
 
@@ -44,9 +44,9 @@ main {
     display: flex;
     justify-content: space-between; /* spread out cards and map */
     align-items: flex-start;
-    gap: 80px; 
+    gap: 50px; 
     width: 100%;
-    padding: 80px;
+    padding: 40px;
     margin-top: -40px;
     box-sizing: border-box;
 }
@@ -61,7 +61,6 @@ main {
     background-color: #E9EDC9;
     padding: 20px 0px;
     width: 100%; 
-    max-width: 1200px; 
     margin: 60px auto;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -81,7 +80,7 @@ main {
     border-radius: 15px;
     border: 3px solid #D4A373;
     width: 100%;
-    max-width: 250px;
+    max-width: 230px;
     height: 250px;
     position: relative;
 }

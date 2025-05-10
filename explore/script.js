@@ -2,7 +2,8 @@ import { db, collection, getDocs } from '../firebase-init.js';
 
 async function loadDestinations() {
   const cardsContainer = document.getElementById('cardsFlex');
-  cardsContainer.innerHTML = '';  // Clear existing content if any
+  const map = document.getElementById('gmap');
+  cardsContainer.innerHTML = '';
 
   try {
     const querySnapshot = await getDocs(collection(db, "destinations"));
@@ -25,6 +26,12 @@ async function loadDestinations() {
         <i class="fa-solid fa-heart heart-icon"></i>
       `;
       cardsContainer.appendChild(card);
+
+      const pin = document.createElement('gmp-advanced-marker');
+      pin.setAttribute('position', data.position);
+      pin.setAttribute('title', data.title);
+      map.appendChild(pin);
+
     });
   } catch (error) {
     console.error("Error loading destinations:", error);
@@ -32,5 +39,4 @@ async function loadDestinations() {
   }
 }
 
-// Load on page load
 loadDestinations();
