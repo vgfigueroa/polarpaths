@@ -59,7 +59,7 @@ main {
     text-align: center;
     border-radius: 25px;
     background-color: #E9EDC9;
-    padding: 30px 0px;
+    padding: 20px 0px;
     width: 100%; 
     max-width: 1200px; 
     margin: 60px auto;
@@ -131,3 +131,9 @@ a {
     color: #190C00;
     text-decoration: none;
 }
+
+#gmap {
+    width: 90%;
+    padding-top: 70px;
+}
+
