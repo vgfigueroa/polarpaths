@@ -41,9 +41,48 @@
           </div>
         </div>
 
-        <img class="map" src="https://www.freeworldmaps.net/united-states/maine/maine-mountains-map.jpg" alt="Map of Maine">
+       <!-- Map content: adapted from https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut#step-3 -->
+      <div id="map-stuff"></div>
 
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOy-ec-SPsOPLTJHOwcKmvze3Ke7abDr4&libraries=maps,marker"
+        defer
+      ></script>
 
+      <gmp-map id="gmap" center="45.25, -69.4" zoom="6.85" map-id="DEMO_MAP_ID" style="height: 600px">
+        <gmp-advanced-marker
+          position="43.654036, -70.263952"
+          title="Portland State Theatre"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="44.337049, -68.271691"
+          title="Acadia National Park"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="44.092979, -70.213039"
+          title="Lewiston"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="43.255449, -70.593856"
+          title="Ogunquit"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="43.255449, -70.593856"
+          title="Bath"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="43.913465, -69.816407"
+          title="Bath"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="43.913465, -69.816407"
+          title="Bath"
+        ></gmp-advanced-marker>
+        <gmp-advanced-marker
+          position="43.621942, -70.270367"
+          title="South Portland Skatepark"
+        ></gmp-advanced-marker>
+      </gmp-map>
       </div>
     </main>
   </body>
