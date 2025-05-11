@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Polar Paths</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../header_styles.css">
-    <script src="https://kit.fontawesome.com/fe2476605d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../header_styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fe2476605d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
@@ -27,123 +34,33 @@
         <a href="../login/login.html"><i class="fa-solid fa-user-circle"></i></a>
       </div>
     </header>
-    <main>
-      <div class="search-container">
+    <div class="main">
+      <h1>Explore Destinations</h1>
+      <!-- <div class="search-container">
         <span><i class="fa-solid fa-magnifying-glass"></i></span>
         <input type="text" placeholder="Search a destination...">
-      </div>
+      </div> -->
 
       <div class="content">
         <div class="cards-container">
-          <h1>Destinations</h1>
-
-          <div class="cards-flex">
-
-            <div class="card"> 
-              <h1> Portland State Theatre </h1>
-              <div class="card-content">
-                <p>The Portland State Theatre is one of the largest music venues in Maine and has several great shows. Take the bus or train! </p>
-                <img src="https://images.discotech.me/venue/None/bb8c858e-92a9-4049-b4ce-023c46017ee9.jpg" alt="Portland State Theatre" width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-            <div class="card"> 
-              <h1> Acadia National Park </h1>
-              <div class="card-content">
-                <p>Acadia National Park has some stunning natural beauty. Take the bus there! </p>
-                <img src="https://visitmaine.com/wp-content/uploads/2024/06/27340e3f-c735-4ff2-a36d-58bb4b6fcdbc-vtm701882dd5eb7c2a3b.jpg" alt="Acadia National Park width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-            <div class="card"> 
-              <h1> South Portland Skatepark </h1>
-              <div class="card-content">
-                <p>This new skatepark is probably the only great park in Maine, you should go. Take the bus! </p>
-                <img src="https://uploads.skateboards.com/skate-park-images/9d4d4de6-a456-423f-8355-67d362e7f879/details-large/90ae8b9b3830ca55c3413ebab1fa115d.webp" alt="South Portland Skatepark" width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-            <div class="card"> 
-              <h1> Lewiston, ME </h1>
-              <div class="card-content">
-                <p>Lewiston is another town worth visitng, just a bus ride away from Brunswick! </p>
-                <img src="https://www.compass.com/m/9a139d0bc74ca6ce296807be123623fd7e5f6575_img_0_62da4/origin.jpg" alt="Lewiston, ME" width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-            <div class="card"> 
-              <h1> Bath, ME </h1>
-              <div class="card-content">
-                <p>Bath has a bunch of ships maybe worth looking at. Accessible by bus!</p>
-                <img src="https://mainstreetmaine.org/wp-content/uploads/2018/07/Maine-First-Ship-Pinnacle-Bath-Maine-2022-02.jpeg" alt="Bath, ME" width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-            <div class="card"> 
-              <h1> Ogunquit, ME </h1>
-              <div class="card-content">
-                <p>Ogunquit is in Southern Maine and is a cool beach town accessible by train!</p>
-                <img src="https://forgetsomeday.com/wp-content/uploads/Ogunquit-Maine.jpg" alt="Ogunquit, ME" width="80" height="100">
-              </div>
-              <i class="fa-solid fa-heart heart-icon"></i>
-            </div>
-
-          </div>
+          <h2 id="results-title">Results</h1>
+          <div class="cards-flex" id="cardsFlex"></div>
         </div>
 
-      <!-- Map content: adapted from https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut#step-3 -->
-      <div id="map-stuff"></div>
-    
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOy-ec-SPsOPLTJHOwcKmvze3Ke7abDr4&libraries=maps,marker"
-          defer
-        ></script>
-
-        <gmp-map id="gmap" center="45.25, -69.4" zoom="6.85" map-id="DEMO_MAP_ID" style="height: 600px">
-          <gmp-advanced-marker
-            position="43.654036, -70.263952"
-            title="Portland State Theatre"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="44.337049, -68.271691"
-            title="Acadia National Park"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="44.092979, -70.213039"
-            title="Lewiston"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="43.255449, -70.593856"
-            title="Ogunquit"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="43.255449, -70.593856"
-            title="Bath"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="43.913465, -69.816407"
-            title="Bath"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="43.913465, -69.816407"
-            title="Bath"
-          ></gmp-advanced-marker>
-          <gmp-advanced-marker
-            position="43.621942, -70.270367"
-            title="South Portland Skatepark"
-          ></gmp-advanced-marker>
-        </gmp-map>
-
-        
-
-
-
+        <!-- Map content: adapted from https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut#step-3 -->
+        <div id="map-stuff"></div>
+        <gmp-map
+          id="gmap"
+          center="45.25, -69.4"
+          zoom="6.85"
+          map-id="DEMO_MAP_ID"
+          style="height: 600px"
+        ></gmp-map>
       </div>
-    </main>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOy-ec-SPsOPLTJHOwcKmvze3Ke7abDr4&libraries=maps,marker"
+      defer
+    ></script>
   </body>
 </html>
