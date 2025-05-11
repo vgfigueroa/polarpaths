@@ -18,7 +18,7 @@ async function loadDestinations() {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-        <h1>${data.title}</h1>
+        <h2>${data.title}</h2>
         <div class="card-content">
           <p>${data.description}</p>
           ${data.imageUrl ? `<img src="${data.imageUrl}" alt="${data.title}" width="80" height="100">` : ''}

@@ -6,20 +6,16 @@
 
 body {
     background-color: #FEFAE0;
-    padding: 0;
 }
 
 main {
-    margin-top: 0px;
     display: flex;
-    align-items: flex-start; /* align to top */
     flex-direction: column;
     justify-content: center;
-    padding-top: 10px; /* to push the search bar down vertically */
     align-items: center;
 }
 
-.search-container {
+/* .search-container {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -38,39 +34,36 @@ main {
     border: none;
     outline: none;
     flex: 1;
-}
+} */
 
 .content {
     display: flex;
-    justify-content: space-between; /* spread out cards and map */
-    align-items: flex-start;
-    gap: 50px; 
-    width: 100%;
-    padding: 40px;
-    margin-top: -40px;
+    padding: 0 40px;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    gap: 40px;
     box-sizing: border-box;
 }
 
 .cards-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: #E9EDC9;
     padding: 20px 0px;
-    width: 100%; 
-    margin: 60px auto;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    overflow-y: scroll;
 }
 
 .cards-flex {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 80px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     width: 100%;
     padding: 20px;
 }
@@ -79,8 +72,7 @@ main {
     background-color: #FAEDCD;
     border-radius: 15px;
     border: 3px solid #D4A373;
-    width: 100%;
-    max-width: 230px;
+    width: 350px;
     height: 250px;
     position: relative;
 }
@@ -90,9 +82,29 @@ main {
     object-fit: cover;
 }
 
-.card h1 {
+h1 {
+    font-family: 'Space Mono';
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#results-title {
+    font-family: 'Space Mono';
+    font-size: 40px;
+}
+
+.card h2 {
     font-size: 20px;
     margin: 15px;
+    font-family: 'Space Mono';
+}
+
+.card p {
+    text-align: end;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
 }
 
 .card-content {
@@ -101,7 +113,7 @@ main {
     align-items: flex-start;
     gap: 20px;
     padding: 10px;
-  }
+}
 
 .heart-icon {
     color: #e83151;
@@ -112,16 +124,9 @@ main {
     cursor: pointer;
 }
 
-.map {
-    border-radius: 50px;
-    object-fit: cover;
-    width: 80%; 
-    max-width: 800px;
-    border: 3px solid black;
-    margin: 20px auto;
-    margin-top: 110px;
+#gmap {
     height: 600px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -130,9 +135,3 @@ a {
     color: #190C00;
     text-decoration: none;
 }
-
-#gmap {
-    width: 90%;
-    padding-top: 70px;
-}
-
