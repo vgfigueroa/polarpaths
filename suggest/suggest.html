@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
@@ -16,40 +17,40 @@
         <a href="../index.html">Polar Paths</a>
       </div>
       <div class="header-right">
-        <a href="../explore/explore.html">Peruse</a>
+        <a href="../explore/explore.html">Explore</a>
         <span>|</span>
-        <a href="../carpool/carpool.html">Plan</a>
+        <a href="../carpool/carpool.html">Plan Carpool</a>
         <span>|</span>
-        <a href="../info/info.html">Public Info</a>
+        <a href="../info/info.html">Transit Info</a>
         <span>|</span>
-        <a href="" id="current-page">Post</a>
+        <a href="" id="current-page">Suggest</a>
         <span>|</span>
         <a href="../login/login.html"><i class="fa-solid fa-user-circle"></i></a>
       </div>
     </header>
     <div class="hero">
-      <h1>Post a Destination!</h1>
+      <h1>Suggest a Destination!</h1>
       <h2>Please fill out the information below to submit your own destinations/routes to Polar Paths.</h2>
     </div>
     <div id="form-container">
       <form id="form">
-        <label for="firstName">Name (optional)</label>
-        <input type="text" class="text-input" id="firstName" placeholder="Enter your name">
+        <label for="name">Name (optional)</label>
+        <input type="text" class="text-input" id="name" placeholder="Enter your name">
 
         <label for="destination">Destination title<span class="required">*</span></label>
         <input type="text" class="text-input" id="destination" placeholder="Enter title" required>
         
-        <label for="destination">Describe this destination<span class="required">*</span></label>
-        <textarea class="text-input" id="destination" placeholder="Describe destination" required></textarea>
+        <label for="description">Describe this destination<span class="required">*</span></label>
+        <textarea class="text-input" id="description" placeholder="Describe destination" required></textarea>
       
         <label for="location">Location (Google Maps link or coordinates)<span class="required">*</span></label>
         <input class="text-input" type="text" id="location" placeholder="Enter location" required>
       
-        <label for="image-upload">Upload an image (optional)</label> 
-        <input type="file" id="image-upload" accept="image/*">
+        <label for="image-upload">Upload a link to an image (optional)</label> 
+        <input type="text" class="text-input" id="image-upload" placeholder="Enter URL">
 
         <div id="submit-div">
-          <input id="submit" type="submit">
+          <button id="submit" type="submit">Submit</button>
         </div>
       </form>
       <div id="confirmation-message" style="display: none;">
@@ -57,6 +58,5 @@
         <a id="new-form-button" href="">Submit another form</a>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
