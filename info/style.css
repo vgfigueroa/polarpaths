@@ -15,9 +15,7 @@ a {
 }
 
 .pageTitle {
-    background-color: #dee8be; 
     height: 100px;
-    /* flexbox to make sure that the txt is centered */
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -30,16 +28,15 @@ a {
 }
 
 .boxForTransitOption {
-    background-color: #e2dbac;
-    border-radius: 15px;
     display: flex;
+    align-items: center;
     flex-direction: column; /* I needed to add this to ensure that the title went above the image / txt*/
+    background-color: #dee8be;
+    border-radius: 15px;
     margin: 10px;
-    height: 300px;
+    height: 260px;
     width: 600px;
     padding-top:20px;
-    padding-bottom:20px;
-    /* padding: 80px; */
 }
 
 .individualTransitOptionTitle {
@@ -50,7 +47,7 @@ a {
 
 .individualTransitOptionDescription {
     font-size: 18px;
-    width: 150px;
+    max-width: 250px;
     text-align: center;
 }
 
@@ -58,47 +55,15 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    row-gap: 75px; /* this is gap btwn boxes */
-    column-gap: 100px; 
-    padding: 40px; /* this is gap between header and grid */
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 70px; 
+    padding: 40px;
     
 }
 
 .gridImage {
-    /* (1) top, (2) right, (3) bottom, (4) left */
-    margin: 0px 0px 10px 10px;
-    width: 50%
-}
-
-#gridImageAmtrak {
-    /* (1) top, (2) right, (3) bottom, (4) left */
-    margin: 0px 0px 10px 10px;
-    width: 50%
-}
-
-#gridImageBREEZ {
-    /* (1) top, (2) right, (3) bottom, (4) left */
-    margin: 0px 0px 10px 10px;
-    width: 45%
-}
-
-#gridImageLink {
-    /* (1) top, (2) right, (3) bottom, (4) left */
-    margin: 0px 0px 10px 10px;
-    width: 50%
-}
-
-#gridImageConcordCoach {
-    /* (1) top, (2) right, (3) bottom, (4) left */
-    margin: 0px 0px 10px 10px;
-    width: 50%
-}
-
-.boxForTransitOption {
-    /* this makes sure that the text / image in each transit box is alligned */
-    display: flex;
-    align-items: center;
-    gap: 20px; 
+    width: 35%;
 }
 
 .contentWithinBox {
@@ -144,11 +109,9 @@ a {
 .main a {
     background-color:  #bc8b5d;
     font-family: Sans-serif;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 8px 15px;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .infoLinks a:hover {
@@ -156,4 +119,19 @@ a {
     cursor: pointer;
 }
 
+h1, h2 {
+    font-family: 'Space Mono';
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p, a {
+    font-family: 'IBM Plex Sans';
+}
 

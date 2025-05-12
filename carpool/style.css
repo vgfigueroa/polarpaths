@@ -6,6 +6,7 @@
 
 body {
     background-color: #fcf3d6;
+    height: auto;
 }
 
 a {
@@ -14,49 +15,75 @@ a {
     text-decoration: none;
 }
 
-.live-posts-section {
-    float: left;
-    padding: 100px;
-    /*background: blue;*/
-    
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Space Mono';
 }
 
-.live-posts{
-    /* make height flexible */ 
-    
-    background-color: white;
-    width: 500px;
-    height: 350px;
+h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p, label, span {
+    font-family: 'IBM Plex Sans';
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.live-posts {
+    max-width: 600px;
+    background-color: #E9EDC9;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.post {
+    background-color: #FEFAE0;
     padding: 10px;
-    border: 30px solid #d6ddba;
 }
 
-.user_section{
-    position: top right;
-    background-color: #d6ddba;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E9EDC9;
+    height: 500px;
+    width: 600px;
+    padding: 20px;
 }
 
-.create-a-post-section{
-    float: left;
-    padding:100px;
-    /*  background: red; */ 
+.form-row {
+    display: flex;
+    justify-content: space-between;
 }
 
-.create-a-post{
-    background-color:#d6ddba;
-    padding: 15px;
-
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-.left{
-    float: left;
+.post {
+    margin: 0 0 20px 0;
 }
 
-.right{
-    float: right;
-}
-
-.button{
+.button {
     background-color: #cfa381;
     border: none;
     color: white;
@@ -64,6 +91,52 @@ a {
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 15px;
+    &:hover {
+        background-color: #cf9a72;
+    }
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#new-event-description {
+    height: 200px;
+}
+
+#submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea {
+    border: solid 2px #CCD5AE;
+}
+
+input {
+    height: 30px;
+}
+
+#creator-name {
+    width: 230px;
+}
+
+#email {
+    width: 270px;
+}
+
+#event-name {
+    width: 350px;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+.email-display {
+    color: rgb(92, 92, 92);
 }

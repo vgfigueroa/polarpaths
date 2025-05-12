@@ -39,8 +39,6 @@ main {
 .content {
     display: flex;
     padding: 0 40px;
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
     gap: 40px;
     box-sizing: border-box;
 }
